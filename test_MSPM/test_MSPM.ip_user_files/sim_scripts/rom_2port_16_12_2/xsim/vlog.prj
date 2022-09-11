@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../test_MSPM.gen/sources_1/ip/rom_2port_16_12_2/sim/rom_2port_16_12_2.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

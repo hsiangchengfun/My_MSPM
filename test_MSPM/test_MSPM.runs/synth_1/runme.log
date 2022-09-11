@@ -1,0 +1,372 @@
+
+*** Running vivado
+    with args -log client_epig_shim.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source client_epig_shim.tcl
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source client_epig_shim.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/hsianch/test_MSPM/test_MSPM.srcs/utils_1/imports/synth_1/client_epig_shim.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/hsianch/test_MSPM/test_MSPM.srcs/utils_1/imports/synth_1/client_epig_shim.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top client_epig_shim -part xc7a200tsbg484-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 664058
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2903.367 ; gain = 0.000 ; free physical = 60679 ; free virtual = 117671
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'client_epig_shim' [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/service_converter.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'server' [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/active_msg.vh:8]
+INFO: [Synth 8-6155] done synthesizing module 'server' (0#1) [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/active_msg.vh:8]
+INFO: [Synth 8-6157] synthesizing module 'channel_if' [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/channel_if.vh:8]
+INFO: [Synth 8-6155] done synthesizing module 'channel_if' (0#1) [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/channel_if.vh:8]
+INFO: [Synth 8-6157] synthesizing module 'channel_if' [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/channel_if.vh:8]
+INFO: [Synth 8-6155] done synthesizing module 'channel_if' (0#1) [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/channel_if.vh:8]
+INFO: [Synth 8-6157] synthesizing module 'server' [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/active_msg.vh:8]
+INFO: [Synth 8-6155] done synthesizing module 'server' (0#1) [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/active_msg.vh:8]
+INFO: [Synth 8-6157] synthesizing module 'channel_if' [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/channel_if.vh:8]
+INFO: [Synth 8-6155] done synthesizing module 'channel_if' (0#1) [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/channel_if.vh:8]
+INFO: [Synth 8-6157] synthesizing module 'channel_if' [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/channel_if.vh:8]
+INFO: [Synth 8-6155] done synthesizing module 'channel_if' (0#1) [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/channel_if.vh:8]
+INFO: [Synth 8-6157] synthesizing module 'FIFO2' [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/FIFO2.v:51]
+	Parameter width bound to: 32 - type: integer 
+	Parameter guarded bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO2_Reg' [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/FIFO2.v:113]
+	Parameter width bound to: 32 - type: integer 
+	Parameter guarded bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FIFO2_Reg' (0#1) [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/FIFO2.v:113]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO2' (0#1) [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/FIFO2.v:51]
+INFO: [Synth 8-6157] synthesizing module 'FIFO2__parameterized0' [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/FIFO2.v:51]
+	Parameter width bound to: 512 - type: integer 
+	Parameter guarded bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO2_LUTRAM' [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/FIFO2.v:244]
+	Parameter width bound to: 512 - type: integer 
+	Parameter guarded bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FIFO2_LUTRAM' (0#1) [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/FIFO2.v:244]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO2__parameterized0' (0#1) [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/FIFO2.v:51]
+WARNING: [Synth 8-689] width (704) of port connection 'D_OUT' does not match port width (512) of module 'FIFO2__parameterized0' [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/service_converter.sv:73]
+INFO: [Synth 8-6155] done synthesizing module 'client_epig_shim' (0#1) [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/service_converter.sv:10]
+WARNING: [Synth 8-3848] Net svr2fl\.rxP[rx_msg][head][srcid] in module/entity client_epig_shim does not have driver. [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/service_converter.sv:15]
+WARNING: [Synth 8-3848] Net svr2fl\.rxP[rx_msg][head][dstid] in module/entity client_epig_shim does not have driver. [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/service_converter.sv:15]
+WARNING: [Synth 8-3848] Net svr2fl\.rxP[rx_msg][head][arg0] in module/entity client_epig_shim does not have driver. [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/service_converter.sv:15]
+WARNING: [Synth 8-3848] Net svr2fl\.rxP[rx_msg][head][arg1] in module/entity client_epig_shim does not have driver. [/home/hsianch/test_MSPM/test_MSPM.srcs/sources_1/imports/mspm/src/common_usr/service_converter.sv:15]
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][31] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][30] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][29] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][28] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][27] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][26] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][25] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][24] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][23] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][22] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][21] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][20] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][19] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][18] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][17] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][16] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][15] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][14] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][13] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][12] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][11] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][10] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][9] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][8] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][7] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][6] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][5] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][4] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][3] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][2] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][1] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][srcid][0] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][31] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][30] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][29] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][28] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][27] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][26] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][25] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][24] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][23] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][22] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][21] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][20] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][19] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][18] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][17] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][16] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][15] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][14] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][13] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][12] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][11] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][10] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][9] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][8] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][7] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][6] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][5] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][4] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][3] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][2] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][1] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][dstid][0] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][31] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][30] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][29] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][28] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][27] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][26] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][25] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][24] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][23] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][22] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][21] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][20] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][19] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][18] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][17] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][16] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][15] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][14] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][13] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][12] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][11] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][10] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][9] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][8] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][7] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][6] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][5] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][4] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][3] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][2] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][1] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg0][0] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg1][31] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg1][30] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg1][29] in module client_epig_shim is either unconnected or has no load
+WARNING: [Synth 8-7129] Port svr2fl\.rxP[rx_msg][head][arg1][28] in module client_epig_shim is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2903.367 ; gain = 0.000 ; free physical = 61765 ; free virtual = 118758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2903.367 ; gain = 0.000 ; free physical = 61765 ; free virtual = 118758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-2L
+INFO: [Device 21-403] Loading part xc7a200tsbg484-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2911.371 ; gain = 8.004 ; free physical = 61765 ; free virtual = 118758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2911.371 ; gain = 8.004 ; free physical = 61756 ; free virtual = 118749
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2911.371 ; gain = 8.004 ; free physical = 61429 ; free virtual = 118425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------+------------------------------+----------------+----------------------+--------------+
+|Module Name      | RTL Object                   | Inference      | Size (Depth x Width) | Primitives   | 
++-----------------+------------------------------+----------------+----------------------+--------------+
+|client_epig_shim | conv_dataQ/fifo_lut/data_reg | User Attribute | 2 x 512              | RAM32M x 86  | 
++-----------------+------------------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2911.371 ; gain = 8.004 ; free physical = 61429 ; free virtual = 118425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-----------------+------------------------------+----------------+----------------------+--------------+
+|Module Name      | RTL Object                   | Inference      | Size (Depth x Width) | Primitives   | 
++-----------------+------------------------------+----------------+----------------------+--------------+
+|client_epig_shim | conv_dataQ/fifo_lut/data_reg | User Attribute | 2 x 512              | RAM32M x 86  | 
++-----------------+------------------------------+----------------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2911.371 ; gain = 8.004 ; free physical = 61428 ; free virtual = 118424
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2911.371 ; gain = 8.004 ; free physical = 61428 ; free virtual = 118424
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2911.371 ; gain = 8.004 ; free physical = 61428 ; free virtual = 118424
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2911.371 ; gain = 8.004 ; free physical = 61428 ; free virtual = 118424
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2911.371 ; gain = 8.004 ; free physical = 61428 ; free virtual = 118424
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2911.371 ; gain = 8.004 ; free physical = 61428 ; free virtual = 118424
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2911.371 ; gain = 8.004 ; free physical = 61428 ; free virtual = 118424
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |LUT1     |     2|
+|3     |LUT2     |     3|
+|4     |LUT3     |     4|
+|5     |LUT4     |     1|
+|6     |LUT5     |     9|
+|7     |LUT6     |    12|
+|8     |RAM32M   |    85|
+|9     |RAM32X1D |     2|
+|10    |FDRE     |    28|
+|11    |FDSE     |     2|
+|12    |IBUF     |  1051|
+|13    |OBUF     |  1104|
+|14    |OBUFT    |   128|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------+----------------------+------+
+|      |Instance     |Module                |Cells |
++------+-------------+----------------------+------+
+|1     |top          |                      |  2432|
+|2     |  conv_chnlQ |FIFO2                 |    13|
+|3     |    fifo_reg |FIFO2_Reg_1           |    13|
+|4     |  conv_dataQ |FIFO2__parameterized0 |   103|
+|5     |    fifo_lut |FIFO2_LUTRAM          |   103|
+|6     |  conv_hdrQ  |FIFO2_0               |    31|
+|7     |    fifo_reg |FIFO2_Reg             |    31|
++------+-------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2911.371 ; gain = 8.004 ; free physical = 61428 ; free virtual = 118424
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 626 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2911.371 ; gain = 8.004 ; free physical = 61435 ; free virtual = 118431
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2911.379 ; gain = 8.004 ; free physical = 61435 ; free virtual = 118431
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2911.379 ; gain = 0.000 ; free physical = 61506 ; free virtual = 118502
+INFO: [Netlist 29-17] Analyzing 87 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'client_epig_shim' is not ideal for floorplanning, since the cellview 'client_epig_shim' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2967.398 ; gain = 0.000 ; free physical = 61415 ; free virtual = 118411
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 87 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 85 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+Synth Design complete, checksum: e6553d8
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 2967.398 ; gain = 64.031 ; free physical = 61618 ; free virtual = 118614
+INFO: [Common 17-1381] The checkpoint '/home/hsianch/test_MSPM/test_MSPM.runs/synth_1/client_epig_shim.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file client_epig_shim_utilization_synth.rpt -pb client_epig_shim_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 10 15:03:19 2022...

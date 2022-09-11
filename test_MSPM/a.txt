@@ -1,0 +1,11 @@
+@Nober#3868 想問一下 
+就是在IP catalog的地方直接 gen 出來的IP是不是沒辦法加一些parameter進去ㄚ 
+我們之前在gen完在跑的時候 他報錯是顯示說一些parameter名稱的port之類的不存在 (有放在 hackmd 那個問題)
+這些東西在xilinx本身的IP是不存在的 
+所以一開始gen的時候就沒辦法加這些東西  
+然後我後面要去recustomize也沒辦法加parameter 
+
+我有查網路上另一個gen IP 的方法好像可以設定參數
+他是另外開一個專案 然後用tools的create and package new IPs
+但是這個方法開起來的 ip 我找不到能像之前那樣針對比如說是 rom 或是 fifo 之類的拉取範本
+如果你有空的話 想問問看這部分你知不知道一些可行的辦法 

@@ -1,0 +1,2 @@
+fifo_pkt_wrapper_infill_mlab.v,verilog,xil_defaultlib,../../../../test_MSPM.gen/sources_1/ip/fifo_pkt_wrapper_infill_mlab/sim/fifo_pkt_wrapper_infill_mlab.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

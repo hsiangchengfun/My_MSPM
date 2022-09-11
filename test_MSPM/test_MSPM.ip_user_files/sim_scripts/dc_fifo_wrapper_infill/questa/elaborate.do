@@ -1,0 +1,1 @@
+vopt -64 +acc=npr -l elaborate.log -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.dc_fifo_wrapper_infill xil_defaultlib.glbl -o dc_fifo_wrapper_infill_opt

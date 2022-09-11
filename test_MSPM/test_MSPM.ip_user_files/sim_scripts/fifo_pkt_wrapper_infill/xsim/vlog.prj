@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../test_MSPM.gen/sources_1/ip/fifo_pkt_wrapper_infill/sim/fifo_pkt_wrapper_infill.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
